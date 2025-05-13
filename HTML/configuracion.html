@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Configuracion</title>
+    <link rel="icon" href="/img/configuracion.svg" type="image/jpg">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="bodyBackground">
+    <div>
+        <header class="colors-style-header"> 
+            <!--encabezado de la pagina-->
+            <h1 class="titulo-animacion">Mi Revista Digital</h1>
+            <p class="center">Edita tus datos a tu gusto</p>
+        </header>
+    </div>  
+    <div>
+        <nav class="navStyle">
+            <!--parte de "busqueda"-->
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">Inicio</a>
+                </li>
+                <li>
+                    <a href="contacto.html" target=_blank>Contacto</a>
+                </li>
+                <li>
+                    <a href="configuracion.html" target="_blank">Configuracion</a>
+                    
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="gridPlantillaConfiguracion paragraph">
+        <div>
+            <form action="#" method="post">
+                <fieldset class="configuracion1">
+                <!--Configuracion de Perfil-->
+                    <legend><strong>Configuracion de Perfil</strong></legend>
+                    <div>
+                        <label for="Imagen">Imagen de Perfil:</label>
+                        <input type="file" accept=".jpg, .png, jpeg, .svg">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Birthday">Fecha de Nacimiento:</label>
+                        <input class="input transparente" type="date" name="Birthday" id="Birthday">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="Gender">Genero:</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="gender" value="Hombre">
+                        <label for="masculino">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="gender" value="Mujer">
+                        <label for="femenino">Femenino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="gender" value="Otro">
+                        <label for="Otro">Otro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="gender" value="Unknokwn">
+                        <label for="Unknokwn">Prefiero no Decirlo</label>
+                    </div>
+                    <br>
+                    <label label for="color">Color primario de la Pagina</label>
+                    <input type="color" name="color" id="color">
+                </fieldset>
+                <fieldset class="configuracion2">
+                <!--Cambio de Clave-->
+                    <legend><strong>Cambiar Clave</strong></legend>
+                    <div>
+                        <label for="username">Nombre de Usuario</label>
+                        <input class="input transparente" type="text" name="username" id="username" required>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="oldPassword">Antigua Contraseña</label>
+                        <input class="input transparente" type="password" name="oldPassword" id="oldPassword">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="newPassword">Nueva Contraseña</label>
+                        <input class="input transparente" type="password" name="newPassword" id="newPassword">
+                    </div>
+                    <div>
+                    <!--Boton de Envio-->
+                        <button class="botonStyle" type="submit">
+                            Guardar Cambios
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <table class="configuracion3 tablaStyle" border="1">
+                <h2 class="center">Usuarios Registrados</h2>
+                <div>
+                    <thead class="thead">
+                        <tr>
+                            <th>Imagen De Perfil</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                            <th>Correo</th>
+                            <th>Cedula</th>
+                            <th>Fecha de Nacimiento</th>
+                        </tr>
+                    </thead>
+                </div>
+                <div>
+                    <tbody class="tablaFoto">
+                        <div>
+                        <!--Usuario 1-->
+                            <tr>
+                                <td><img src="/img/laura.jpg" alt="foto de perfil" style="border-radius: 100px;"></td>
+                                <td>Ana Sofía</td>
+                                <td>Rodríguez Pérez</td>
+                                <td>ana.rodriguez@gmail.com</td>
+                                <td>21.587.932</td>
+                                <td>15/03/2003</td>
+                            </tr>
+                        </div>
+                        <div>
+                        <!--Usuario 2-->
+                            <tr>
+                                <td><img src="/img/carlos.jpg" alt="foto de perfil" style="border-radius: 100px;"></td>
+                                <td>Carlos Manuel</td>
+                                <td>Gómez López</td>
+                                <td>GomeLo15@gmail.com</td>
+                                <td>18.901.234</td>
+                                <td>05/07/2001</td>
+                            </tr>
+                        </div>
+                        <div>
+                        <!--Usuario 3-->
+                            <tr>
+                                <td><img src="/img/maria.jpg" alt="foto de perfil" style="border-radius: 100px;"></td>
+                                <td>María Fernanda</td>
+                                <td>Silva Castro</td>
+                                <td>Maferlou@hotmail.com</td>
+                                <td>8.765.574</td>
+                                <td>15/03/2003</td>
+                            </tr>
+                        </div>
+                        <div>
+                        <!--Usuario 4-->
+                            <tr>
+                                <td><img src="/img/pedro.jpg" alt="foto de perfil" style="border-radius: 100px;"></td>
+                                <td>Pedro José</td>
+                                <td>Hernández Vargas</td>
+                                <td>pepeJo@outlook.com</td>
+                                <td>25.345.678</td>
+                                <td>10/09/2005</td>
+                            </tr>
+                        </div>
+                        <div>
+                        <!--Usuario 5-->
+                            <tr>
+                                <td><img src="/img/laura.jpg" alt="foto de perfil" style="border-radius: 100px;"></td>
+                                <td>Laura Isabel</td>
+                                <td>Díaz Martínez</td>
+                                <td>Diaaaaz406$@gmail.com</td>
+                                <td>9.123.456</td>
+                                <td>22/04/1996</td>
+                            </tr>
+                        </div>    
+                    </tbody> 
+                </div>  
+            </table>
+            <div  class="footer1">
+            <!--footer de la pagina-->
+                <footer>
+                    <div>
+                        <p>Contacto: +58 414-4737627</p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+        <button class="chat-boton" id="chatbotButton">Chat</button>
+</body>
+</html>
