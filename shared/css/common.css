@@ -1,0 +1,197 @@
+@import url('vars.css');
+
+/* Estilos base y reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    line-height: var(--line-height-base);
+    color: var(--text-color);
+    background-color: #e0e0e0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar personalizado */
+.custom-navbar {
+    background: linear-gradient(var(--primary-color), var(--secondary-color));
+    padding: 0.8rem 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.custom-navbar .nav-link {
+    padding: 0.5rem 1rem;
+    margin: 0 0.2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    color: white !important;
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Encabezado */
+.colors-style-header {
+    background-color: var(--primary-color);
+    color: rgb(180, 213, 48);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+
+/* Animaciones */
+.titulo-animacion {
+    transition: transform 0.5s ease;
+    display: inline-block;
+}
+
+.titulo-animacion:hover {
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Textos */
+.article-text {
+    text-align: justify;
+    word-wrap: break-word;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+}
+
+/* Cards personalizadas */
+.card {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/*BOTÓN DE CHAT FLOTANTE*/
+.chat-boton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #25d366, #128C7E);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.chat-boton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #128C7E, #25d366);
+}
+
+.chat-boton i {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+/* Animaciones para el botón de chat */
+@keyframes pulsate {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+    100% { transform: scale(1); }
+}
+
+@keyframes desaparecer {
+    0% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0; transform: scale(0); display: none; }
+}
+
+@keyframes reaparecer {
+    0% { opacity: 0; transform: scale(0); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+.chat-boton.hidden {
+    display: none;
+}
+
+/* Media Queries para Responsive Design */
+@media (max-width: 992px) {
+    .colors-style-header {
+        padding: 1.5rem;
+    }
+    
+    .custom-navbar .navbar-brand {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .colors-style-header {
+        padding: 1rem;
+    }
+    
+    .article-text {
+        font-size: 0.95rem;
+    }
+    
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    .chat-boton {
+        width: 70px;
+        height: 70px;
+        font-size: 14px;
+    }
+    
+    .chat-boton i {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .colors-style-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .colors-style-header p {
+        font-size: 0.9rem;
+    }
+    
+    .custom-navbar .navbar-brand {
+        font-size: 1.1rem;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    footer .col-md-6 {
+        margin-bottom: 1.5rem;
+    }
+}

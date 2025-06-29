@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto - Mi Revista Digital</title>
+    <link rel="icon" href="/assets/icons/contacto.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/shared/css/common.css">
+    <link rel="stylesheet" href="/shared/css/vars.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body class="bodyBackground">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index.html">Mi Revista Digital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/views/config/config.html">Configuración</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <header class="colors-style-header text-center py-3 mb-4 rounded">
+            <h1 class="titulo-animacion">Contacto</h1>
+            <p class="lead">Contáctanos para cualquier consulta</p>
+        </header>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="fullName" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="fullName" placeholder="Ej: Alejandro Perez" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="ejemplo@dominio.com" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Tema del Mensaje</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" selected disabled>Seleccione un tema</option>
+                                    <option value="Recomendación">Recomendación</option>
+                                    <option value="Crítica">Crítica</option>
+                                    <option value="Reporte">Reporte</option>
+                                    <option value="Ayuda">Ayuda</option>
+                                    <option value="Servicio al Cliente">Servicio al Cliente</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Escriba su mensaje aquí..." required></textarea>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary py-2">
+                                    <i class="bi bi-send"></i> Enviar Mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <h3 class="card-title">Información de Contacto</h3>
+                        <p class="card-text">
+                            <i class="bi bi-envelope"></i> contacto@mirevistadigital.com<br>
+                            <i class="bi bi-telephone"></i> +58 414-4737627
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-3 mt-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2023 Mi Revista Digital. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <button class="chat-boton" id="chatbotButton">
+        <i class="bi bi-chat-dots-fill"></i>
+        Chat
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/shared/js/contact.js"></script>
+</body>
+</html>

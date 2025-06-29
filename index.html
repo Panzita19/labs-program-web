@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mi Revista Digital - Inicio</title>
+    <link rel="icon" href="assets/icons/neuro.webp" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="shared/css/common.css">
+    <link rel="stylesheet" href="shared/css/vars.css">
+</head>
+<body class="bodyBackground">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Mi Revista Digital</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="views/contact/contact.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="views/config/config.html">Configuración</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <header class="colors-style-header text-center py-4 mb-4 rounded"> 
+            <h1 class="titulo-animacion display-4">Mi Revista Digital</h1>
+            <p class="lead">Una revista sobre diversos temas</p>
+        </header>
+    </div>  
+
+    <div class="container-lg">
+        <div class="row">
+            <!-- Contenido Principal -->
+            <main class="col-lg-8 col-md-12">
+                <section class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Últimas Noticias</h2>
+                        
+                        <article class="mb-5">
+                            <h2 class="text-center">Articulo 1: El Papel de la Atención Selectica en el Aprendizaje</h2>
+                            <p class="article-text">La atención selectiva, la capacidad de focalizar recursos cognitivos en información relevante e ignorar distractores, <strong>es fundamental para el aprendizaje</strong>. Estudios de neuroimagen revelan la implicación de redes frontoparietales en este proceso...</p>
+                            <figure class="text-center">
+                                <img src="assets/img/a.jpeg" alt="Foto de un Cerebro" class="img-fluid rounded" style="max-height: 400px;">
+                                <figcaption class="mt-2">Foto del Montaje de un Cerebro, Starlink.</figcaption>
+                            </figure>
+                            <p class="text-muted">Proyeccion de un Cerebro</p>
+                        </article>
+
+                        <article>
+                            <h2 class="text-center">Articulo 2: la neuroplasticidad</h2>
+                            <p class="paragraph">La neuroplasticidad, la <b>asombrosa capacidad del cerebro para reorganizar su estructura y función</b> en respuesta a la experiencia o la lesión, juega un papel crucial en la recuperación tras un ictus. Después de un daño cerebral, áreas no afectadas pueden asumir las funciones perdidas mediante la formación de nuevas conexiones neuronales. <b>La terapia de rehabilitación</b>, enfocada en estimular las capacidades afectadas, aprovecha esta plasticidad para promover la recuperación motora, sensorial y cognitiva. La investigación actual se centra en identificar los mecanismos moleculares y celulares que impulsan la neuroplasticidad post-ictus para desarrollar intervenciones terapéuticas más efectivas y personalizadas. A continuación anexamos un vídeo explicativo del Fisioterapeuta Marco Kantun: <a href="https://www.youtube.com/watch?v=KeFdxdEIzBo" target="_blank">Video de Explicacion de la Neuroplasticidad</a></p>
+                            <div class="ratio ratio-16x9 my-3">
+                                <iframe src="https://www.youtube.com/embed/RuvTrZm2djw" allowfullscreen></iframe>
+                            </div>
+                            <video controls class="w-100 my-3">
+                                <source src="https://samplelib.com/lib/preview/mp4/sample-5s.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="col-lg-4 col-md-12">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="text-center">Sobre mí</h2>
+                        <p class="article-text">Soy una apasionada investigadora en el campo de la neurociencia cognitiva, con un enfoque particular en la influencia de la tecnología en el desarrollo infantil</p>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="text-center">Afiliación</h2>
+                        <ul class="list-unstyled">
+                            <li>Investigadora Independiente, anteriormente asociada al Instituto de Estudios Avanzados en Neurociencias (INEAN) en Caracas.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="text-center">Tendencias más populares de esta semana</h2>
+                        <ol class="list-group list-group-numbered">
+                            <li class="list-group-item">El Impacto de las Pantallas en el Cerebro Adolescente</li>
+                            <li class="list-group-item">La Neurociencia de la Conciencia</li>
+                            <li class="list-group-item">La Inteligencia Artificial y el Cerebro</li>
+                        </ol>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Correo Electrónico: jjpanza.21@est.ucab.edu.ve</p>
+                    <audio controls class="w-100">
+                        <source src="https://samplelib.com/lib/preview/mp3/sample-3s.mp3" type="audio/mpeg">
+                        Tu navegador no soporta el elemento de audio.
+                    </audio>
+                </div>
+                <div class="col-md-6">
+                    <dl>
+                        <dt class="text-center">API</dt>
+                        <dd>Las API son mecanismos que permiten a dos componentes de software comunicarse entre sí mediante un conjunto de definiciones y protocolos.</dd>
+                        <dt class="text-center mt-2">SEO</dt>
+                        <dd>Es la abreviatura en inglés de "optimización en buscadores", consiste en ayudar a los buscadores a entender tu contenido...</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón de Chat FLOTANTE ESTÁTICO -->
+    <button class="chat-boton" id="chatbotButton">
+        <i class="bi bi-chat-dots-fill"></i>
+        Chat
+    </button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/shared/js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Estilos específicos para la página de Contacto */
+
+/* Formulario de contacto */
+#contactForm {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#contactForm label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+#contactForm .form-control,
+#contactForm .form-select {
+    border-radius: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+#contactForm .form-control:focus,
+#contactForm .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(183, 51, 163, 0.25);
+}
+
+#contactForm textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* Botón de enviar */
+.btn-send {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.75rem 2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.btn-send:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+/* Información de contacto */
+.contact-info {
+    background-color: rgba(183, 51, 163, 0.05);
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-left: 4px solid var(--primary-color);
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Media Queries para Contacto */
+@media (max-width: 768px) {
+    #contactForm {
+        padding: 1rem;
+    }
+    
+    .contact-info {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #contactForm {
+        padding: 0.75rem;
+    }
+    
+    #contactForm textarea {
+        min-height: 120px;
+    }
+    
+    .contact-info {
+        text-align: center;
+        padding: 1rem;
+    }
+    
+    .contact-info i {
+        display: block;
+        margin: 0 auto 0.5rem;
+    }
+}
